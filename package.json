@@ -2,9 +2,10 @@
   "name": "mainproject",
   "version": "1.0.0",
   "description": "main project learning the  full stack",
+  "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js"
   },
   "keywords": [
     "javascript",
@@ -12,5 +13,8 @@
     "backend"
   ],
   "author": "Hridaya Mishra",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
