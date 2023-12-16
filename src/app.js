@@ -3,6 +3,8 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 
 const app = express();
+
+
 // Configure cors
 app.use(
   cors({
@@ -22,8 +24,8 @@ app.use(
   })
 );
 
-// Stroing the files and folder in our server
-app.use(express.static('public'))
+// Stroing the files and folder in public folder serves the files even clients can access
+app.use(express.static('public'));
 
 // Configuring the cookies for CRUD WITH THE USER COOKIE
 app.use(cookieParser());
