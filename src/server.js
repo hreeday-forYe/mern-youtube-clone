@@ -2,6 +2,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import connectDB from './db/dbConnect.js';
+import { app } from './app.js'
 
 // This below function is async function which returns promise
 connectDB()
