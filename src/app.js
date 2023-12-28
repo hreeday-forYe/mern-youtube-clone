@@ -4,7 +4,6 @@ import cookieParser from 'cookie-parser';
 
 const app = express();
 
-
 // Configure cors
 app.use(
   cors({
@@ -29,4 +28,12 @@ app.use(express.static('public'));
 
 // Configuring the cookies for CRUD WITH THE USER COOKIE
 app.use(cookieParser());
+
+// Routes Import
+import userRoutes from './routes/userRoutes.js';
+
+// routes declaration
+// http://localhost:8000/api/v1/users/ -- procceds to the user routes handler 
+app.use("/api/v1/users",userRoutes); 
+
 export { app };
